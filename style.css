@@ -1,0 +1,102 @@
+body{
+    background-image: url('https://cdn.prod.website-files.com/5a9ee6416e90d20001b20038/64f5e02cb5805eb6fd8e503c_Rectangle%20(98).svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#box{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 5%;
+    width: 70%;
+    box-shadow: 1em 1em 50px rgba(0, 0, 0, 0.5);
+}
+
+h1{
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+#inputTask{
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 400px;
+    background-color: rgb(244, 244, 244);
+    border-style: none;
+    outline: none;
+}
+
+#addButton{
+    padding: 10px;
+    border-radius: 20px;
+    border-style: none;
+    color: white;
+    background-color: rgb(236, 100, 79);
+    transition: background-color 0.5s ease;
+}
+
+#addButton:hover{
+    background-color:rgb(243, 130, 113);
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+#tasks{
+    font-family: helvetica;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#list-container{
+    list-style: none;
+    font-family: Montserrat;
+    padding-left: 0;
+    position: relative;
+    margin-top: 20px;
+}
+
+#list-container li {
+    position: relative;
+    padding-left: 40px; /* Adjust to give space for the image */
+    margin-top: 15px;
+}
+
+.deleteButton{
+    position: absolute;
+    right: 15px;
+    border: none;
+    background-color: white;
+}
+
+.deleteButton:hover{
+    cursor: pointer;
+}
+
+.checkBox {
+    position: absolute;
+    left: 0px;
+    transform: translateY(-8%);
+    border: none;
+    background-color: transparent;
+}
+
+.checkIcon {
+    width: 25px;
+    height: 25px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
+}
+
+.completed{
+    text-decoration: line-through;
+}
+
+.completed .checkIcon {
+    opacity: 1; /* Fade out the original icon */
+    content: url('https://www.svgrepo.com/show/345597/checkbox-circle.svg');
+}
